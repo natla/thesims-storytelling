@@ -6,4 +6,4 @@ I have created quite a few characters in the game which you can meet in the blog
 
 Retro girly style, pastel colors.
 
-Live version at https://symphony-garden.fly.dev.
+Live version at [https://natla.github.io/thesims-storytelling/](https://natla.github.io/thesims-storytelling/).
