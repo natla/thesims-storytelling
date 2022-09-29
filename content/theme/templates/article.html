@@ -7,7 +7,9 @@
 <section class="post-body">{{ article.content|safe }}</section>
 
 <p class="post-footer">
-  Published {{ article.locale_date }} by {{ article.author }}
+  <span class="comment-link">
+    Published {{ article.locale_date }} by {{ article.author }}
+  </span>
   <br /><br />
 
   <span class="post-labels">
