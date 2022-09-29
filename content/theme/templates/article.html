@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+<h3 class="post-title">{{ article.title }}</h3>
+<section class="post-body">{{ article.content|safe }}</section>
+
+<p class="post-footer">
+  Published {{ article.locale_date }} by {{ article.author }}
+  <br /><br />
+
+  <span class="post-labels">
+    Labels:
+    {% for tag in article.tags %}
+    <a href="{{tag.slug}}.html" rel="tag">
+      {{tag.name}}
+    </a>
+    {% endfor %}
+  </span>
+</p>
+
+{% endblock %}

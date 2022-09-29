@@ -1,0 +1,16 @@
+# MacOS
+.DS_Store
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Log files
+*.log
+
+# Virtual environment
+myvenv/
+venv/
+
+# PyCharm
+.idea/

@@ -1,0 +1,25 @@
+{% block content %}
+
+{% for article in articles %}
+<h3 class="post-title"><a href="{{ article.slug }}.html">{{ article.title }}</a></h3>
+
+<section class="post-body">{{ article.content|safe }}</section>
+
+<div class="post-footer">
+
+  Published {{ article.locale_date }} by {{ article.author }}
+  <br /><br />
+
+  <span class="post-labels">
+    Labels:
+    {% for tag in article.tags %}
+    <a href="{{tag.slug}}.html" rel="tag">
+      {{tag.name}}
+    </a>
+    {% endfor %}
+  </span>
+
+</div>
+{% endfor %}
+
+{% endblock %}
