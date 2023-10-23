@@ -60,7 +60,7 @@ TEMPLATE_PAGES = {
 THEME_TEMPLATES_OVERRIDES = ['content/theme/templates']
 THEME = 'content/theme'
 
-STATIC_PATHS = ['theme/static']
+STATIC_PATHS = ['static']
 
 TAG_SAVE_AS = '{slug}.html'
 TAG_URL = '{slug}.html'
